@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    /* background-color: #db0e0e; */
+    margin-top: 50px;
+    background-image: radial-gradient(rgb(7, 0, 0), rgb(88, 8, 84));
+    /* color: #fff; */
+}
+
+h1 {
+    color: #ffe600;
+    font-size: 55px;
+    font-style: oblique;
+    text-shadow: 2px 2px 10px rgba(230, 243, 87, 0.8);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    /* gap: 10px; */
+    column-gap: 2px;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 20px;
+    /* border-radius: 20px;
+    background: rgba(255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.5); */
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
+    font-weight: 600;
+    color: #0c0337;
+    /* background-color: #9fed88; */
+    background-image: linear-gradient(rgb(71, 28, 2),rgb(221, 232, 67));
+    border: 2px solid #000000;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -2px -2px 5px rgba(239, 236, 236, 0.4),
+                inset 2px 2px 5px rgba(236, 232, 232, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+
+}
+
+.cell:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 230, 0, 0.6);
+    /* transition: transform 2s ease; */
+}
+
+.cell:active {
+    transform: scale(0.95);
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    /* background-color: #065e6a; */
+    background-image: linear-gradient(#065e6a,rgb(0, 0, 0));
+    color: #f9f9f9;
+    border: none;
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-image: linear-gradient(#0b8ca2, #000);
+    transform: translateY(2px);
+}
+
+#status {
+    font-size: 40px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #2283a1;
+    text-shadow: 1px 1px 8px rgba(249, 254, 255, 0.8);
+    transition: font-size 0.3s ease;
+}
+
+#status:hover {
+    font-size: 60px;
+}
+
+@media screen and (max-width: 500px) {
+    .board {
+        grid-template-columns: repeat(3, 80px);
+    }
+
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 2.2em;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    #status {
+        font-size: 30px;
+    }
+}
