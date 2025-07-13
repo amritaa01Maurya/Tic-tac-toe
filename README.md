@@ -13,8 +13,11 @@ An interactive browser-based Tic-Tac-Toe game built using HTML, CSS, and JavaScr
 # How Minimax Works
 
 The Minimax algorithm recursively evaluates all possible future board states to choose the move that minimizes the opponent's chance of winning.
+<br>
 In this project:
+<br>
 'X' = Computer (AI)
+<br>
 'O' = Human player
 
 # How to Play
@@ -23,9 +26,10 @@ In this project:
 git clone https://github.com/amritaa01Maurya/Tic-tac-toe.git
 
 2. Open index.html in any browser
-3. Start playing — try to beat the AI!Timeline
+3. Start playing — try to beat the AI!
 
 # Timeline
 
 Built: May 2025
+<br>
 Uploaded: July 2025
